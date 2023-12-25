@@ -1,0 +1,71 @@
+.fixed-bottom-container {
+    width: 80%;
+    position: fixed;
+    bottom: 3%;
+    left: 20%;
+    right: 0;
+    background-color: rgb(245, 245, 245);
+    z-index: 1000;
+    padding: 35px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.5); /* Updated shadow */
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+.card-container {
+    flex-grow: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Changed to column to stack the buttons */
+    align-items: flex-end; /* Changed from 'right' to 'flex-end' */
+    padding: 2px 15px;
+    border: 0px solid;
+    border-radius: 10px;
+    width: 220px; /* Fixed width for the container */
+    margin-bottom: 0px;
+}
+
+.card-container > * {
+    width: 100%; /* Makes all direct children of card-container take full width */
+    margin-bottom: 5px; /* Adds spacing between children */
+}
+
+.card-container > *:last-child {
+    margin-bottom: 0; /* Removes bottom margin from the last child */
+}
+
+
+.load-button {
+    margin-left: 0px;
+}
+
+.textarea-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+.mc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 120%; /* Increase width of textarea */
+   
+    padding-left: 1%;
+  
+}
+
+
+.submit-button {
+    height: 40px; /* Adjust button height */
+    padding: 0 15px; /* Adjust button padding */
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-150%);
+}
+
+

@@ -1,0 +1,17 @@
+.buttonstyle {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.title-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2vh;
+}
+
+.template-list {
+  max-height: 75vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}

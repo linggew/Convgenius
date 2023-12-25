@@ -1,0 +1,14 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px; /* Height of your footer */
+    /* Your footer styling */
+}
+
+    .footer div {
+        margin-left: 5px;
+        margin-right: 5px;
+    }

@@ -1,0 +1,212 @@
+.mc-container {
+    position: absolute;
+    left: 20%;
+    right: 10%;
+    top: 7vh;
+    max-height: 70vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+   
+}
+
+
+.message-row {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+
+
+.query-row {
+    justify-content: flex-start;
+}
+
+.answer-row {
+    justify-content: flex-end;
+    width: 90%;
+}
+
+/* User and Bot icon styles */
+.icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+/* User and Bot message styles */
+.message {
+    max-width: 70%;
+    word-wrap: break-word;
+    padding: 10px 15px;
+    border-radius:15px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 768px) {
+    .message {
+        max-width: 90%; /* Allow more width on smaller screens */
+    }
+}
+
+.query-row .message {
+    background-color: #e9eff5; /* Light blue for user messages */
+    align-self: flex-start;
+    margin-left: 50px;
+    }
+
+.answer-row .message {
+    background-color: #fff; /* White for bot responses */
+    align-self: flex-end;
+    margin-right: 50px;
+    border: 1px solid #e0e0e0;
+    }
+
+/* Carousel container style */
+/* Carousel Item Styling */
+.carousel-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    overflow-x: hidden;
+}
+
+.carousel-item .message {
+    max-width: 70%;
+    word-wrap: break-word;
+    padding: 10px 15px;
+    border-radius: 15px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* White for bot responses */
+    border: 1px solid #e0e0e0;
+    margin: 10px 0;
+}
+
+
+
+/* Submit Button Inside Carousel */
+.carousel-item .submit-button {
+    margin-left: 78%; /* Adds margin to the right of the button */
+    width: 100%;
+    height: 10%;
+    padding: 10px;
+    border-radius: 90px;
+    background-color: #161616;
+    text-align: center;
+    /* Other styles */
+}
+
+/* Adjusting the Carousel item layout */
+.carousel-item {
+    display: flex;
+    flex-direction: row-reverse; /* Reverses the order to make button first */
+    justify-content: flex-start; /* Aligns content to the right */
+    align-items: center; /* Aligns items vertically */
+    padding: 10px; /* Existing padding */
+}
+
+
+
+.carousel-item .submit-button:hover {
+    background-color: #e4e4e4;
+}
+
+
+
+
+
+/* Adjusting the positioning and size of the prev and next icons */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 2px; /* Adjust icon width */
+    height: 2px; /* Adjust icon height */
+}
+
+/* Aligning the carousel indicators */
+.carousel-indicators {
+    
+    
+    position: absolute !important;
+    right: 0 !important;
+    bottom: -20px !important;
+    left: 0 !important;
+    z-index: 2 !important;
+    display: flex !important;
+    justify-content: center !important;
+    padding: 0 !important;
+    margin-right: 15% !important;
+    margin-bottom: 1rem !important;
+    margin-left: 0% !important;
+}
+
+.carousel-indicators li {
+    display: none;
+    
+}
+
+.carousel-inner {
+    margin-bottom:50px;
+ }
+
+/* Adjusting the spacing for prev and next buttons */
+.carousel-control-prev {
+    left: 5%; /* Position towards the left */
+    
+}
+
+.carousel-control-next {
+    left: 11%; /* Position towards the right */
+}
+
+
+/* Scrollbar styling */
+.mc-container::-webkit-scrollbar {
+width: 8px;
+}
+
+.mc-container::-webkit-scrollbar-thumb {
+background-color: #b2afaf;
+border-radius: 100px;
+}
+
+.mc-container::-webkit-scrollbar-track {
+background-color: #f2f2f2;
+}
+            
+/* Responsive adjustments */
+
+
+@keyframes slideIn {
+    from {
+    opacity: 0;
+    transform: translateY(20px);
+    }
+    to {
+    opacity: 1;
+    transform: translateY(0);
+    }
+}
+.message-row {
+    animation: slideIn 0.3s ease-out;
+}
+
+.llm_message-icon-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; /* Aligns content to the right */
+    align-items: center; /* Aligns items vertically */
+    width: 90%; /* Ensures full width for alignment */
+    padding: 10px; /* Add padding for spacing */
+}
+
+.llm_message-icon-container .message{
+    margin-right: 5%;
+}
+
+
+/* Ensuring the LLM icon is aligned correctly */
+

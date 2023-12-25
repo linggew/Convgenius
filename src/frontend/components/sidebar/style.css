@@ -1,0 +1,47 @@
+.sidebar {
+    display: flex;
+    height: 92vh;
+    width: 30vw;
+    max-width: 20%;
+    transition: width 0.3s ease;
+}
+
+.sidebar-container {
+    height: 92vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 30vw;
+}
+
+.sidebar-text {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 1vh;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+.button-container:hover {
+   
+}
+
+.history-button {
+    width: 10vw;
+    word-wrap: break-word;
+    transition: background-color 0.3s ease;
+}
+.no-hover-effect {
+    background-color: transparent !important;
+    border-color: #f8f9fa !important; /* Adjust to match your button border color */
+    color: #ffffff !important; /* Set the text color */
+}
+
+.no-hover-effect:hover {
+    background-color: transparent !important;
+    border-color: #f8f9fa !important;
+    color: #ffffff !important; /* Keep the text color the same on hover */
+}
+
+

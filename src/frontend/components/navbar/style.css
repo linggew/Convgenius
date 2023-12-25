@@ -1,0 +1,18 @@
+.top-navbar {
+    height: 5vh;
+}
+
+.project-name {
+    margin-left: 10px;
+}
+.mx-auto {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 10%;
+}
+
+.typical {
+    width: 100px;
+    margin-left: 10px;
+}
